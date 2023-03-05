@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="css\check.css">
+</head>
+
+<body>
+    <header>
+        <!-- start first nav -->
+        <nav class="first-nav">
+            <div class="search-bar">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="name">
+                <h2>Ahmed Tareq</h2>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+        <!-- end first nav -->
+
+        <!-- start second nav -->
+        <nav class="second-nav">
+            <ul class="links">
+                <li>
+                    <a href="">HOME <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="about.html" target="_blank">ABOUT <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="shop.html" target="_blank">SHOP</a>
+                </li>
+                <li>
+                    <a href="">CATALOGUE</a>
+                </li>
+                <li>
+                    <a href="">NEW ARRIVALS</a>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- end second nav -->
+
+        <!-- start third section -->
+        <nav class="third">
+            <h4><span>Home / Cart</span> / Checkout</h4>
+        </nav>
+        <!-- end third section -->
+
+        <!-- start check page -->
+        <div class="check">
+            <div class="container">
+                <p class="head">Returning customer? <a href="">Click here</a> to login</p>
+                <div class="content">
+                    <div class="left">
+                        <h2>Billing Details</h2>
+                        <div class="content-left">
+                            <h4>Country *</h4>
+                            <div class="select">
+                                <div class="left-side">Select a country</div>
+                                <div class="right-side"><i class="fa-solid fa-angle-down"></i></div>
+                            </div>
+                            <div class="name">
+                                <div class="first">
+                                    <h4>First Name *</h4>
+                                    <input type="text">
+                                </div>
+                                <div class="last">
+                                    <h4>Last Name *</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="company">
+                                <h4>Company Name</h4>
+                                <input type="text">
+                            </div>
+                            <div class="adress">
+                                <h4>Adress *</h4>
+                                <input type="text" placeholder="Strees adress">
+                                <input type="text" placeholder="Apartment,suite,unit,etc,(optional)">
+                            </div>
+                            <div class="state">
+                                <div class="left">
+                                    <h4>State / Country *</h4>
+                                    <input type="text">
+                                </div>
+                                <div class="right">
+                                    <h4>Posta / Zip *</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="identify">
+                                <div class="left">
+                                    <h4>Email Adress *</h4>
+                                    <input type="text">
+                                </div>
+                                <div class="right">
+                                    <h4>Phone *</h4>
+                                    <input type="text" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <div class="acc">
+                                    <input id="acc" type="checkbox" name="account">
+                                    <label for="acc">Create an account</label>
+                                </div>
+                                <div class="ship">
+                                    <input id="ship" type="checkbox" name="ship">
+                                    <label for="ship">Ship To Different Adress</label>
+                                </div>
+                                <div class="text">
+                                    <h4>Order Notes</h4>
+                                    <textarea name="Messame" cols="66" rows="9"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2>Coupon Code</h2>
+                        <div class="content-right">
+                            <div class="top">
+                                <h5>Enter your coupon code if you have one.</h5>
+                                <div class="code">
+                                    <input type="text" placeholder="Coupon Code">
+                                    <button>APPLY</button>
+                                </div>
+                            </div>
+                            <h2 class="adv">Your Order</h2>
+                            <div class="bottom">
+                                <div class="row">
+                                    <h4>Product</h4>
+                                    <h4 class="collect">Total</h4>
+                                </div>
+                                <div class="row">
+                                    <h4 class="active">Top Up T-Shirt x 1</h4>
+                                    <h class="active collect">$250.00</h4>
+                                </div>
+                                <div class="row">
+                                    <h4 class="active">Polo Shirt x 1</h4>
+                                    <h4 class="active collect">$100.00</h4>
+                                </div>
+                                <div class="row">
+                                    <h4>Cart Subtotal</h4>
+                                    <h4 class="active collect">$350.00</h4>
+                                </div>
+                                <div class="row">
+                                    <h4>Order Total</h4>
+                                    <h4 class="collect">$350.00</h4>
+                                </div>
+                                <div class="choose">
+                                    <p>Direct Bank Transfer</p>
+                                    <p>Cheque Payment</p>
+                                    <p>Paypal</p>
+                                </div>
+                                <a href="thanks.html"><button class="place">PLACE ORDER</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end check -->
+    </header>
+
+    <!-- start footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="col-1">
+                <h3 class="title">Navigation</h3>
+                <ul class="list">
+                    <li>Sell online</li>
+                    <li>Features</li>
+                    <li>Shopping cart</li>
+                    <li>Store builder</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="list">
+                    <li>Mobile commerce</li>
+                    <li>Dropshipping</li>
+                    <li>Website development</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="list">
+                    <li>Point of sale</li>
+                    <li>Hardware</li>
+                    <li>Software</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3 class="title">Promo</h3>
+                <div class="image">
+                    <img src="images\shoe.png" alt="photo">
+                </div>
+                <h2>Finding Your Perfect Shoes</h2>
+                <p>promo from january 15--25,2019</p>
+            </div>
+            <div class="form">
+                <h3 class="title">Contact info</h3>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Egypt,Elmansoura Mostafa El-zayat sreet branched from mogame3.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="tele">+01093117659</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-message"></i>
+                    <p>am2825453@gmail.com</p>
+                </div>
+                <h4>Subscribe</h4>
+                <div class="submit">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">SEND</button>
+                </div>
+            </div>
+    </footer>
+    <footer class="end">
+        <p>Copyright &2023 All rights reserved This template is made with <i class="fa-solid fa-heart"></i> by
+            <span>Ahmed Tareq</span>.</p>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

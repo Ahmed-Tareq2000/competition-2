@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #696969;
+    --sec-color: blueviolet;
+    --bg-color: #f1f1f1f1;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+/* start first nav */
+header .first-nav {
+    padding-left: 85px;
+    padding-right: 85px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header .first-nav .search-bar {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+header .first-nav .search-bar i {
+    color: var(--main-color);
+    font-size: 13px;
+}
+
+header .first-nav .search-bar input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 20px;
+    color: var(--main-color);
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+header .first-nav .search-bar input:focus {
+    padding-left: 10px;
+}
+
+header .first-nav .name h2 {
+    padding: 4px;
+    border: 3px solid black;
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 105px;
+}
+
+header .first-nav .icons i {
+    padding-right: 15px;
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+header .first-nav .icons i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* end first nav */
+
+/* start second nav */
+header .second-nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .second-nav ul li a {
+    color: var(--main-color);
+    padding: 5px 24px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+header .second-nav .links .active {
+    color: var(--sec-color);
+}
+
+header .second-nav ul li a:hover {
+    color: var(--sec-color);
+}
+
+/* end second nav */
+
+/* start third nav */
+header .third {
+    background-color: var(--bg-color);
+    padding-left: 85px;
+    padding-right: 85px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header .third span {
+    color: var(--sec-color);
+}
+
+/* end third nav */
+
+/* start page */
+.page {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    height: calc(100vh - 230px);
+    border-bottom: 1px solid #ccc;
+}
+
+.page .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .container .image img {
+    width: 650px;
+    height: 400px;
+}
+
+.page .container .text hr {
+    width: 10%;
+    border-color: var(--sec-color);
+}
+
+.page .container .text p {
+    width: 550px;
+    margin-top: 30px;
+    line-height: 2;
+    color: var(--main-color);
+}
+
+.page .container .text h2 {
+    margin-top: 22px;
+    font-size: 25px;
+}
+
+/* end page */
+
+/* start team */
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.team hr {
+    width: 3%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: var(--sec-color);
+}
+
+.team h2 {
+    text-align: center;
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.team .container .col img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.team .container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+}
+
+.team .container .col {
+    text-align: center;
+}
+
+.team .container .col h3 {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.team .container .col h4 {
+    font-size: 14px;
+    opacity: 0.4;
+    margin-top: 4px;
+}
+
+.team .container .col p {
+    margin-top: 25px;
+    color: var(--main-color);
+    line-height: 1.6;
+}
+
+/* end team */
+
+/* start first section */
+.first-sec .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.first-sec .container .col {
+    display: flex;
+}
+
+.first-sec .container .col div {
+    margin-left: 18px;
+}
+
+.first-sec .container .col i {
+    color: var(--sec-color);
+    font-size: 33px;
+}
+
+.first-sec .container .col div h3 {
+    font-size: 16px;
+}
+
+.first-sec .container .col div p {
+    color: var(--main-color);
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* end first section */
+
+/* start footer */
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-footer .container .footer-title {
+    visibility: hidden;
+}
+
+.main-footer .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 35px;
+}
+
+.main-footer .container h3 {
+    font-size: 20px;
+    margin-bottom: 23px;
+    font-weight: 700;
+}
+
+.main-footer .container .list li {
+    color: var(--main-color);
+    margin-bottom: 18px;
+}
+
+.main-footer .container .col-4 img {
+    width: 100px;
+}
+
+.main-footer .container .col-4 .image {
+    background-color: aqua;
+    border-radius: 6px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.main-footer .container .col-4 h2 {
+    color: var(--sec-color);
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.main-footer .container .col-4 p {
+    color: var(--main-color);
+    line-height: 1.6;
+}
+
+.main-footer .container .form div {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.main-footer .container .form div i {
+    color: var(--sec-color);
+    padding-right: 14px;
+}
+
+.main-footer .container .form div p {
+    margin-top: -3px;
+    font-size: 14px;
+}
+
+.main-footer .container .form div .tele {
+    color: var(--main-color);
+}
+
+.main-footer .container .form h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.main-footer .container .form input {
+    padding: 8px;
+    color: var(--main-color);
+    font-weight: bold;
+    outline: none;
+}
+
+.main-footer .container .form .submit button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--sec-color);
+    padding: 12px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.main-footer .container .form .submit button:hover {
+    background-color: #6700cf;
+    box-shadow: 0 4px 8px var(--sec-color);
+}
+
+.end {
+    padding: 80px 0 40px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.end span {
+    color: var(--sec-color);
+    font-size: 18px;
+}
+
+/* end footer */
